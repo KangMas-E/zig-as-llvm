@@ -37,7 +37,7 @@ strip | *-strip)
 		case "${argv}" in
 		-Wp,-MD,*) set -- "$@" "-MD" "-MF" "$(echo "${argv}" | sed 's/^-Wp,-MD,//')" ;;
 		-Wl,--warn-common | -Wl,--verbose | -Wl,-Map,*) ;;
-		--target=aarch64-unknown-linux-musl) ;;
+		--target=armv7-unknown-linux-musl) ;;
 		*) set -- "$@" "${argv}" ;;
 		esac
 		shift
